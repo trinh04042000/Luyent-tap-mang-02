@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirming Something</title>
+    <script type="text/javascript">
+        function processConfirm(answer) {
+            var result = "";
+            if (answer) {
+                result = "Excellent. We'll play a  game of chess."
+            } else {
+                result = "Maybe latter then.";
+            }
+            return result;
+        }
+    </script>
+</head>
+<body>
+   <script>
+       var confirmAnswer = confirm("Shall we play a game?");
+       var theAnswer = processConfirm(confirmAnswer);
+       alert(theAnswer);
+   </script>
+</body>
+</html>
